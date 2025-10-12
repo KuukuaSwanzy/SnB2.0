@@ -12,9 +12,13 @@ export default function Homepage() {
       maxWidth="sm"
       height="50vh"
       sx={{
-        backgroundImage: "url(frontpage_picture.webp)",
+        background: `
+        linear-gradient(to right, rgba(255,255,255,10), rgba(255,255,255,0.6)),
+        url("frontpage_picture.webp")
+        `,
         backgroundSize: "cover",
         backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
       alignContent="center"
     >

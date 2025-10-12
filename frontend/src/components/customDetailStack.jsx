@@ -1,9 +1,9 @@
 import { Divider, Stack, Typography } from "@mui/material";
 
-export default function DetailStack({ title, description, color }) {
+export default function DetailStack({ title, description, color, fontWeight }) {
   return (
-    <Stack sx={{ backdropFilter: "blur(10px)", margin: 1, borderRadius: 4 }}>
-      <Typography component="h1" variant="h5" textAlign="center">
+    <Stack margin={3}>
+      <Typography component="h1" variant="h5" textAlign="center" fontWeight={fontWeight}>
         {title}
       </Typography>
       <Divider

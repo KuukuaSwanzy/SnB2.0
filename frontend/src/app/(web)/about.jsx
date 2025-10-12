@@ -11,18 +11,18 @@ export default function AboutPage() {
       component="section"
       maxWidth="sm"
       minHeight="100vh"
-      sx={{ backgroundColor: "primary.main", paddingTop: 6 }}
+      sx={{ backgroundColor: "primary.main", paddingY: 6 }}
     >
-      <Stack spacing={2} direction="column" sx={{ padding: 1}}>
-        <Card  sx={{
-          backgroundImage:"url(/aboutpage_picture.webp)", 
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          height: 400,
-          width: 400
-        }}>
-        </Card>
+      <Stack spacing={2} direction="column" sx={{ padding: 1 }}>
+        <Card
+          sx={{
+            backgroundImage: "url(/aboutpage_picture.webp)",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            height: 400,
+          }}
+        ></Card>
         <Card
           sx={{
             mx: 2,
