@@ -8,7 +8,7 @@ export default function DetailStack({ title, description, color }) {
       </Typography>
       <Divider
         variant="middle"
-        sx={{ color: color, border: 2, mx: 19, my: 2 }}
+        sx={{ color: color, border: 3, mx: 18, my: 2 }}
       />
       <Typography component="p" variant="subtitle1" textAlign="center">
         {description}

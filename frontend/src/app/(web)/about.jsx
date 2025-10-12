@@ -1,5 +1,5 @@
 import DetailStack from "@/components/customDetailStack";
-import { Box, Card } from "@mui/material";
+import { Box, Card, Stack } from "@mui/material";
 
 const pageTitle = "About Us";
 const pageDescription =
@@ -11,21 +11,32 @@ export default function AboutPage() {
       component="section"
       maxWidth="sm"
       minHeight="100vh"
-      sx={{ backgroundColor: "primary.main" }}
+      sx={{ backgroundColor: "primary.main", paddingTop: 6 }}
     >
-      <Card
-        sx={{
-          mx: 2,
-          backgroundColor: "black",
-          color: "primary.light",
-        }}
-      >
-        <DetailStack
-          title={pageTitle}
-          description={pageDescription}
-          color={pageColor}
-        />
-      </Card>
+      <Stack spacing={2} direction="column" sx={{ padding: 1}}>
+        <Card  sx={{
+          backgroundImage:"url(/aboutpage_picture.webp)", 
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          height: 400,
+          width: 400
+        }}>
+        </Card>
+        <Card
+          sx={{
+            mx: 2,
+            backgroundColor: "black",
+            color: "primary.light",
+          }}
+        >
+          <DetailStack
+            title={pageTitle}
+            description={pageDescription}
+            color={pageColor}
+          />
+        </Card>
+      </Stack>
     </Box>
   );
 }
