@@ -7,13 +7,21 @@ import {
   Typography,
 } from "@mui/material";
 
-export default function CardComponent({ title, description, img, alt }) {
+export default function CardComponent({
+  title,
+  description,
+  img,
+  alt,
+  height = "200",
+  bgcolor = "black"
+}) {
   return (
     <Box margin={2}>
       <Card sx={{ borderRadius: 3 }}>
         <CardActionArea>
-          <CardMedia component="img" height="200" image={img} alt={alt} />
+          <CardMedia component="img" height={height} image={img} alt={alt} />
           <CardContent
+          bgcolor={bgcolor}
             sx={{
               backgroundColor: "black",
               color: "primary.light",

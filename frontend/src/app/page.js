@@ -4,6 +4,7 @@ import AboutPage from "./(web)/about";
 import Homepage from "./(web)/homepage";
 import SpecialOffers from "./(web)/SpecialOffers";
 import Services from "./(web)/services";
+import Products from "./(web)/products";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <AboutPage />
       <SpecialOffers />
       <Services />
+      <Products />
       <Typography variant="h4" component="h1">
         Spark and Blush 2.0
       </Typography>
