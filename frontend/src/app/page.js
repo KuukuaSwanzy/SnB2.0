@@ -3,7 +3,7 @@ import Typography from "@mui/material/Typography";
 import AboutPage from "./(web)/about";
 import Homepage from "./(web)/homepage";
 import SpecialOffers from "./(web)/SpecialOffers";
-import Services from "./(web)/Services";
+import Services from "./(web)/services";
 
 export default function Home() {
   return (
