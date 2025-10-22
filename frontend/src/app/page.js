@@ -16,9 +16,6 @@ export default function Home() {
       <Services />
       <Products />
       <Contact />
-      <Typography variant="h4" component="h1">
-        Spark and Blush 2.0
-      </Typography>
     </>
   );
 }

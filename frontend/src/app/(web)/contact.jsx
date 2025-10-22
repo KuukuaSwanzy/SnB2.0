@@ -1,4 +1,7 @@
+"use client";
+
 import DetailStack from "@/components/customDetailStack";
+import { Phone } from "@mui/icons-material";
 import { MailOutlineRounded } from "@mui/icons-material";
 import { QueryBuilderRounded } from "@mui/icons-material";
 import { Box, Button, Stack, TextField, Typography } from "@mui/material";
@@ -63,9 +66,31 @@ export default function Contact() {
       <Stack spacing={0.5} marginTop={2} color={"primary.light"}>
         <Typography>2 Mo Street, Community 22, Tema</Typography>
         <Typography sx={{ paddingBottom: 3 }}>P.O Box Ds 2187</Typography>
-        <Typography>+233-5455-41014 - Spark And Blush</Typography>
-        <Typography sx={{ justifyContent: "center" }}>
-          <MailOutlineRounded fontSize="" /> nhyiraswanzy11@gmail.com
+        <Typography
+          sx={{
+            justifyContent: "center",
+            alignItems: "center",
+            display: "flex",
+          }}
+        >
+          <Phone fontSize="" sx={{ marginRight: 0.5 }} />
+          <a
+            href="tel:+233-5455-41014"
+            style={{ textDecoration: "none", color: "white", marginRight: 3 }}
+          >
+            +233-5455-41014
+          </a>{" "}
+          - Spark And Blush
+        </Typography>
+        <Typography
+          sx={{
+            justifyContent: "center",
+            alignItems: "center",
+            display: "flex",
+          }}
+        >
+          <MailOutlineRounded fontSize="" sx={{ marginRight: 0.5 }} />{" "}
+          nhyiraswanzy11@gmail.com
         </Typography>
         <Typography
           sx={{
