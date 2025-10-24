@@ -5,6 +5,7 @@ export default function Services() {
   return (
     <Box
       component="section"
+      id="services"
       maxWidth="sm"
       alignContent="center"
       sx={{

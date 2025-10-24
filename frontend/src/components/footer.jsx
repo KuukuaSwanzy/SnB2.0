@@ -1,9 +1,10 @@
 import { Box, Button, Stack, Typography } from "@mui/material";
+import Link from "next/link";
 
 export default function Footer() {
   return (
     <Box
-      component="section"
+      component="footer"
       maxWidth="sm"
       minHeight="30vh"
       bgcolor={"primary.light"}
@@ -12,19 +13,19 @@ export default function Footer() {
       justifyContent={"center"}
     >
       <Stack direction={"row"} spacing={1} paddingBottom={4}>
-        <Button size="small" sx={{ fontSize: 12 }}>
+        <Button href="#home" size="small" sx={{ fontSize: 12 }}>
           Home
         </Button>
-        <Button size="small" sx={{ fontSize: 12 }}>
+        <Button href="#about" size="small" sx={{ fontSize: 12 }}>
           About
         </Button>
-        <Button size="small" sx={{ fontSize: 12 }}>
+        <Button href="#services" size="small" sx={{ fontSize: 12 }}>
           Services
         </Button>
-        <Button size="small" sx={{ fontSize: 12 }}>
+        <Button href="#products" size="small" sx={{ fontSize: 12 }}>
           Our Products
         </Button>
-        <Button size="small" sx={{ fontSize: 12 }}>
+        <Button href="#contact" size="small" sx={{ fontSize: 12 }}>
           Contact
         </Button>
       </Stack>
@@ -35,7 +36,16 @@ export default function Footer() {
       </Typography>
       <Typography>
         Developed by{" "}
-        <span style={{ color: "primary." }}>Klenam Chris.</span>
+        <Link
+          href={"https://klenam-chris.vercel.app"}
+          style={{
+            color: "primary.main",
+            textDecoration: "none",
+            cursor: "pointer",
+          }}
+        >
+          Klenam Chris.
+        </Link>
       </Typography>
     </Box>
   );

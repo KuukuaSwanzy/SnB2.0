@@ -10,6 +10,7 @@ export default function Contact() {
   return (
     <Box
       component="section"
+      id="contact"
       maxWidth="sm"
       minHeight="70vh"
       bgcolor={"primary.main"}

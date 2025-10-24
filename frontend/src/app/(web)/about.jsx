@@ -9,6 +9,7 @@ export default function AboutPage() {
   return (
     <Box
       component="section"
+      id="about"
       maxWidth="sm"
       minHeight="100vh"
       sx={{ backgroundColor: "primary.main", paddingY: 6 }}

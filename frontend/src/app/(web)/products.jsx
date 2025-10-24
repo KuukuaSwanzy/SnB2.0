@@ -6,11 +6,13 @@ export default function Products() {
   return (
     <Box
       component="section"
+      id="products"
       maxWidth="sm"
       alignContent="center"
       bgcolor={"black"}
-      paddingTop={2}
+      paddingTop={8}
       paddingBottom={5}
+      maxHeight={"100vh"}
     >
       <DetailStack
         title={"Our Products"}

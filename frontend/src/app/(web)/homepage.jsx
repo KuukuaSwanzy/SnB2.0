@@ -9,6 +9,8 @@ export default function Homepage() {
   return (
     <Box
       component="section"
+      id="home"
+      className="home"
       maxWidth="sm"
       height="50vh"
       sx={{
