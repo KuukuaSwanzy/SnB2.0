@@ -15,7 +15,7 @@ export default function RootLayout(props) {
           <ThemeProvider theme={theme}>
             {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
             <CssBaseline />
-            <Container maxWidth="xs" sx={{ padding: 0 }}>
+            <Container maxWidth="xs" sx={{ padding: 0 }} disableGutters>
               <CustomAppBar />
               {props.children}
               <Footer />

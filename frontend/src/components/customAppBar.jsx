@@ -11,27 +11,51 @@ import {
   ListItemButton,
   ListItemText,
   Toolbar,
+  Drawer,
   Typography,
+  Stack,
 } from "@mui/material";
+import { CloseRounded } from "@mui/icons-material";
 
 export default function CustomAppBar() {
-  const [open, setOpen] = React.useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
 
-  const toggleDrawer = (state) => () => {
-    setOpen(state);
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
   };
 
   const mobileNavBar = (
-    <Box sx={{ width: "250" }}>
-      <List>
-        {["Home", "About", "Services", "Product", "Contact"].map((text) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
+    <Box
+      role="presentation"
+      onClick={toggleMobileMenu}
+      color={"white"}
+      maxWidth="100vw"
+      height={"100vh"}
+      bgcolor={"black"}
+      padding={3}
+    >
+      <CloseRounded
+        color="white"
+        fontSize="large"
+        onClick={toggleMobileMenu}
+        sx={{ alignContent: "start", cursor: "pointer" }}
+      />
+      <Box
+        display={"flex"}
+        sx={{ justifyContent: "center", paddingY: 30, alignSelf: "justify" }}
+      >
+        <List>
+          {["Home", "About", "Services", "Our Product", "Contact"].map(
+            (menu) => (
+              <ListItem key={menu} disablePadding>
+                <ListItemButton>
+                  <ListItemText primary={menu} />
+                </ListItemButton>
+              </ListItem>
+            )
+          )}
+        </List>
+      </Box>
     </Box>
   );
 
@@ -44,7 +68,7 @@ export default function CustomAppBar() {
             size="large"
             color="inherit"
             aria-label="menu"
-            onClick={toggleDrawer(true)}
+            onClick={toggleMobileMenu}
           >
             <Menu />
           </IconButton>
@@ -58,6 +82,11 @@ export default function CustomAppBar() {
         </Toolbar>
       </AppBar>
       <Toolbar />
+
+      {/* Drawer for Mobile Menu */}
+      <Drawer anchor="top" open={mobileMenuOpen} onClick={toggleMobileMenu}>
+        {mobileNavBar}
+      </Drawer>
     </Box>
   );
 }
