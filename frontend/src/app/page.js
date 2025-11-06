@@ -3,7 +3,7 @@ import * as React from "react";
 import AboutPage from "./(web)/about";
 import Homepage from "./(web)/Homepage";
 import SpecialOffers from "./(web)/SpecialOffers";
-import Services from "./(web)/Services";
+// import Services from "./(web)/Services";
 import Products from "./(web)/Products";
 import Contact from "./(web)/contact";
 
