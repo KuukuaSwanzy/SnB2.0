@@ -1,5 +1,5 @@
 import * as React from "react";
-import Typography from "@mui/material/Typography";
+// import Typography from "@mui/material/Typography";
 import AboutPage from "./(web)/about";
 import Homepage from "./(web)/homepage";
 import SpecialOffers from "./(web)/SpecialOffers";
