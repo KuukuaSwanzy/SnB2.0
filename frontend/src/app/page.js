@@ -1,10 +1,10 @@
 import * as React from "react";
 // import Typography from "@mui/material/Typography";
 import AboutPage from "./(web)/about";
-import Homepage from "./(web)/Homepage";
-import SpecialOffers from "./(web)/SpecialOffers";
-// import Services from "./(web)/Services";
-import Products from "./(web)/Products";
+import Homepage from "./(web)/homepage";
+import SpecialOffers from "./(web)/specialoffers";
+import Services from "./(web)/services";
+import Products from "./(web)/products";
 import Contact from "./(web)/contact";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
       <Homepage />
       <AboutPage />
       <SpecialOffers />
-      {/* <Services /> */}
+      <Services />
       <Products />
       <Contact />
     </>
